@@ -1,4 +1,4 @@
-package Lesson1.Ability;
+package Zoo.Ability;
 
 public interface Runable {
     int getRunSpeed();

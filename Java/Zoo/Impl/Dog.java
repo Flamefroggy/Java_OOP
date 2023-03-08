@@ -1,10 +1,10 @@
-package Lesson1.Impl;
+package Zoo.Impl;
 
-import Lesson1.Parent.Animal;
-import Lesson1.Ability.Illable;
-import Lesson1.Ability.Runable;
-import Lesson1.Ability.Speakable;
-import Lesson1.Ability.Swimable;
+import Zoo.Parent.Animal;
+import Zoo.Ability.Illable;
+import Zoo.Ability.Runable;
+import Zoo.Ability.Speakable;
+import Zoo.Ability.Swimable;
 
 public class Dog extends Animal implements Illable, Runable, Swimable, Speakable {
 

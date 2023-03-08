@@ -1,6 +1,6 @@
-package Lesson1.Impl;
+package Zoo.Impl;
 
-import Lesson1.Parent.Human;
+import Zoo.Parent.Human;
 
 public class Doctor extends Human {
 

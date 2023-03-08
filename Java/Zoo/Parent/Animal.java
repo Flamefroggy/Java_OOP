@@ -1,4 +1,4 @@
-package Lesson1.Parent;
+package Zoo.Parent;
 
 import java.io.Serializable;
 

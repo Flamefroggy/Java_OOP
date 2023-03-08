@@ -1,8 +1,8 @@
-package Lesson1.Impl;
+package Zoo.Impl;
 
-import Lesson1.Ability.Flyable;
-import Lesson1.Ability.Illable;
-import Lesson1.Parent.Animal;
+import Zoo.Ability.Flyable;
+import Zoo.Ability.Illable;
+import Zoo.Parent.Animal;
 
 
 public class Eagle extends Animal implements Flyable, Illable {

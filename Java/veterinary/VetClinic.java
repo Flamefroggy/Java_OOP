@@ -1,6 +1,6 @@
 package veterinary;
-import Lesson1.Ability.*;
-import Lesson1.Parent.Animal;
+import Zoo.Ability.*;
+import Zoo.Parent.Animal;
 import java.util.ArrayList;
 import java.util.List;
 

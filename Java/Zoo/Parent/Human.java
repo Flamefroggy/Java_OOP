@@ -1,9 +1,9 @@
-package Lesson1.Parent;
+package Zoo.Parent;
 
-import Lesson1.Ability.Illable;
-import Lesson1.Ability.Runable;
-import Lesson1.Ability.Speakable;
-import Lesson1.Ability.Swimable;
+import Zoo.Ability.Illable;
+import Zoo.Ability.Runable;
+import Zoo.Ability.Speakable;
+import Zoo.Ability.Swimable;
 
 public abstract class Human implements Illable, Runable, Swimable, Speakable {
     private String name;

@@ -1,9 +1,9 @@
-package Lesson1.Impl;
+package Zoo.Impl;
 
-import Lesson1.Parent.Animal;
-import Lesson1.Ability.Illable;
-import Lesson1.Ability.Runable;
-import Lesson1.Ability.Speakable;
+import Zoo.Parent.Animal;
+import Zoo.Ability.Illable;
+import Zoo.Ability.Runable;
+import Zoo.Ability.Speakable;
 
 public class Cat extends Animal implements Illable, Runable, Speakable {
     public Cat(String name) {

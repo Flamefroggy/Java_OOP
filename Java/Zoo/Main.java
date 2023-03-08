@@ -1,6 +1,6 @@
-package Lesson1;
+package Zoo;
 
-import Lesson1.Impl.*;
+import Zoo.Impl.*;
 import veterinary.VetClinic;
 
 public class Main {
