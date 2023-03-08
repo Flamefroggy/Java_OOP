@@ -58,20 +58,20 @@ public class Animal {
     }
     // Тут начинаем методы
     private void wakeUp() {
-        System.out.println("Кошка проснулось");}
+        System.out.println("просыпается");}
     private void findFood() {
-        System.out.println("Кошка ищет еду");
+        System.out.println("ищет еду");
     }
     private void toEat() {
-        System.out.println("Кошка кушает");
+        System.out.println("кушает");
     }
     public void toPlay() {
-        System.out.println("Кошка играется");}
+        System.out.println("играется");}
     public void goToSleep() {
-        System.out.println("Кошка идёт спать");
+        System.out.println("идёт спать");
     }
     public void toSleep() {
-        System.out.println("Кошка спит");
+        System.out.println("спит");
     }
     public void  toSpeak() {
         System.out.println("Уруру");
