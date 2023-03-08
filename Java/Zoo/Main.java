@@ -42,6 +42,6 @@ public class Main {
         System.out.println("Говорящие: " + vetClinic.getSpeakable());
         System.out.println("Плавающие: " + vetClinic.getSwimable());
         System.out.println("Летающие: "  + vetClinic.getFlyable());
-        System.out.println("Бегающие: "  + vetClinic.getRunnable());
+        System.out.println("Бегающие: "  + vetClinic.getRunable());
     }
 }

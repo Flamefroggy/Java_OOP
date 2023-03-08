@@ -5,8 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VetClinic {
-    private List<Animal> animals;
+    private final List<Animal> animals;
 
+    public VetClinic() {
+        this.animals = new ArrayList<>();
+    }
     public VetClinic addAnimal(Animal animal) {
         this.animals.add(animal);
         return this;
@@ -46,11 +49,11 @@ public class VetClinic {
         return result;
     }
     //Бегающие
-    public List<Runnable> getRunnable(){
-        List<Runnable> result = new ArrayList<>();
+    public List<Runable> getRunable(){
+        List<Runable> result = new ArrayList<>();
         for (Animal animal: getAnimals()){
-            if(animal instanceof Runnable){
-                result.add((Runnable) animal);
+            if(animal instanceof Runable){
+                result.add((Runable) animal);
             }
         }
         return result;
