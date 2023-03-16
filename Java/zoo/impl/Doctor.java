@@ -1,6 +1,6 @@
-package Zoo.Impl;
+package zoo.impl;
 
-import Zoo.Parent.Human;
+import zoo.parent.Human;
 
 public class Doctor extends Human {
 
@@ -17,13 +17,13 @@ public class Doctor extends Human {
         setProfession("Доктор");
     }
 
-    public void toHeal() {
-        work();
+    public void toTreat() {
+        System.out.println("Вылечил" );
     }
 
     @Override
     public void work() {
-        System.out.println("Лечит");
+        toTreat();
     }
 
 
@@ -40,5 +40,10 @@ public class Doctor extends Human {
     @Override
     public void speak() {
         System.out.println("Подходи, вылечу");
+    }
+
+    @Override
+    public void setIll() {
+        this.setIll(true);
     }
 }

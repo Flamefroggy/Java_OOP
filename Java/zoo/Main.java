@@ -1,6 +1,6 @@
-package Zoo;
+package zoo;
 
-import Zoo.Impl.*;
+import zoo.impl.*;
 import veterinary.VetClinic;
 
 public class Main {
@@ -16,6 +16,9 @@ public class Main {
                 .addAnimal(new Dog("Кнопа"))
                 .addAnimal(new Dog("Гавр"))
                 .addAnimal(new Duck("Наташа"));
+        VetClinic vetStaff = new VetClinic();
+
+        vetStaff.addStaff(new Doctor("Айболит",52));
 
 
 /**

@@ -1,10 +1,10 @@
-package Zoo.Impl;
+package zoo.impl;
 
-import Zoo.Parent.Animal;
-import Zoo.Ability.Illable;
-import Zoo.Ability.Runable;
-import Zoo.Ability.Speakable;
-import Zoo.Ability.Swimable;
+import zoo.parent.Animal;
+import zoo.ability.Illable;
+import zoo.ability.Runable;
+import zoo.ability.Speakable;
+import zoo.ability.Swimable;
 
 public class Dog extends Animal implements Illable, Runable, Swimable, Speakable {
 
@@ -18,12 +18,7 @@ public class Dog extends Animal implements Illable, Runable, Swimable, Speakable
 
     @Override
     public void toHunt() {}
-    @Override
-    public void getIll() {
-        {
-            System.out.println(this.getType() + " " + this.getName() + " заболел");
-        }
-    }
+
     @Override
     public void speak() {
         System.out.println("Woof");
@@ -33,10 +28,12 @@ public class Dog extends Animal implements Illable, Runable, Swimable, Speakable
     public int getSwimSpeed() {
         return 4;
     }
-
-
     @Override
     public int getRunSpeed() {
         return 7;
+    }
+    @Override
+    public void setIll() {
+        this.setIll(true);
     }
 }
