@@ -1,9 +1,9 @@
-package Zoo.Parent;
+package zoo.parent;
 
-import Zoo.Ability.Illable;
-import Zoo.Ability.Runable;
-import Zoo.Ability.Speakable;
-import Zoo.Ability.Swimable;
+import zoo.ability.Illable;
+import zoo.ability.Runable;
+import zoo.ability.Speakable;
+import zoo.ability.Swimable;
 
 public abstract class Human implements Illable, Runable, Swimable, Speakable {
     private String name;
@@ -30,7 +30,7 @@ public abstract class Human implements Illable, Runable, Swimable, Speakable {
 
     @Override
     public String toString() {
-        return String.format("%s Имя: %s, Профессия: %s",getClass(),this.name, this.profession );
+        return String.format("%s Имя: %s, Профессия: %s",getClass(),this.name, this.profession, this.isIll );
     }
 //  Геттеры и Сеттеры
     public String getName() {
@@ -73,10 +73,14 @@ public abstract class Human implements Illable, Runable, Swimable, Speakable {
         this.profession = profession;
     }
 
-    @Override
-    public void getIll() {
-
+    public boolean isIll() {
+        return isIll;
     }
+
+    public void setIll(boolean ill) {
+        isIll = ill;
+    }
+
     private void washHands () {
         System.out.println("Помыл руки");
     }

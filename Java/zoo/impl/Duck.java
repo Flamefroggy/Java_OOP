@@ -1,11 +1,8 @@
-package Zoo.Impl;
+package zoo.impl;
 
-import Zoo.Parent.Animal;
-import Zoo.Ability.Illable;
-import Zoo.Ability.Speakable;
-import Zoo.Ability.Flyable;
-import Zoo.Ability.Swimable;
-public class Duck extends Animal implements Flyable, Illable, Speakable, Swimable {
+import zoo.parent.Animal;
+import zoo.ability.*;
+public class Duck extends Animal implements Flyable, Illable, Speakable, Swimable, Runable {
     public Duck(String name) {
         super(name);
     }
@@ -17,12 +14,6 @@ public class Duck extends Animal implements Flyable, Illable, Speakable, Swimabl
     @Override
     public void toHunt() {
 
-    }
-
-    public void getIll() {
-        {
-            System.out.println(this.getType() + " " + this.getName() + " заболел");
-        }
     }
 
     @Override
@@ -38,5 +29,14 @@ public class Duck extends Animal implements Flyable, Illable, Speakable, Swimabl
     @Override
     public int getSwimSpeed() {
         return 3;
+    }
+
+    @Override
+    public int getRunSpeed() {
+        return 2;
+    }
+    @Override
+    public void setIll() {
+        this.setIll(true);
     }
 }

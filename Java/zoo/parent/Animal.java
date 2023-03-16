@@ -1,10 +1,10 @@
-package Zoo.Parent;
+package zoo.parent;
 
 import java.io.Serializable;
 
 public abstract class Animal implements Serializable {
     private String name;
-    private  String color;
+    private String color;
     private int pawsCount;
     private boolean isIll;
 
@@ -54,7 +54,7 @@ public abstract class Animal implements Serializable {
     }
 
     public void setIll(boolean ill) {
-        isIll = ill;
+        this.isIll = ill;
     }
 
     // Тут начинаем методы

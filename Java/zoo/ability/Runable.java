@@ -1,4 +1,4 @@
-package Zoo.Ability;
+package zoo.ability;
 
 public interface Runable {
     int getRunSpeed();

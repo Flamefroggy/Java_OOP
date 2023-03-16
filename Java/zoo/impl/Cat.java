@@ -1,9 +1,9 @@
-package Zoo.Impl;
+package zoo.impl;
 
-import Zoo.Parent.Animal;
-import Zoo.Ability.Illable;
-import Zoo.Ability.Runable;
-import Zoo.Ability.Speakable;
+import zoo.parent.Animal;
+import zoo.ability.Illable;
+import zoo.ability.Runable;
+import zoo.ability.Speakable;
 
 public class Cat extends Animal implements Illable, Runable, Speakable {
     public Cat(String name) {
@@ -18,12 +18,6 @@ public class Cat extends Animal implements Illable, Runable, Speakable {
     public void toHunt() {
     }
     @Override
-    public void getIll() {
-        {
-            System.out.println(this.getType() + " " + this.getName() + " заболел");
-        }
-    }
-    @Override
     public void speak() {
         System.out.println("meow");
     }
@@ -31,5 +25,10 @@ public class Cat extends Animal implements Illable, Runable, Speakable {
     @Override
     public int getRunSpeed() {
         return 7;
+    }
+
+    @Override
+    public void setIll() {
+        this.setIll(true);
     }
 }
