@@ -26,7 +26,7 @@ public class ConsoleView {
     }
 
     private User createUser() {
-        String name = prompt("������� ���: ");
+        String name = prompt("Введите имя: ");
         return new User(name);
     }
 }
